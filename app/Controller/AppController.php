@@ -32,7 +32,7 @@ App::uses('Controller', 'Controller');
  */
 class AppController extends Controller {
 
-	public $components = array(
+	/*public $components = array(
         'Flash',
         'Auth' => array(
             'loginRedirect' => array(
@@ -63,5 +63,5 @@ class AppController extends Controller {
             $data = $this->User->find('first', $options);
             $this->set('authUserName', $data['User']['name']);
         }
-    }
+    }*/
 }
