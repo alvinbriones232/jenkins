@@ -5,8 +5,18 @@ class JenkinsControllerTest extends ControllerTestCase {
 		'app.message'
 	);*/
 	public function testIndex() {
-		$a = $this->testAction('/jenkins/index/hasdghasdgashdasdghsdgs');
-		debug($a);
+		$data = array('Test' => array(
+			'first_name' => 'James Fairhurst',
+			'last_name' => 'hdasnbdagdasgd',
+			'date_created' => date('Y-m-d H:i:s'),
+			'date_modified' => date('Y-m-d H:i:s')
+		));
+
+		// Attempt to save
+		$result = $this->Test->save($data);
+
+		// Test save failed
+		$this->assertFalse($result);
 	}
 
 }
