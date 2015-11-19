@@ -11,8 +11,8 @@ class JenkinsController extends AppController {
 		$this->autoRender = false;
 		$this->Test = ClassRegistry::init('Test');
 		$data = array('Test' => array(
-			'first_name' => 'James Fairhurst',
-			'last_name' => '',
+			'first_name' => 'Neil Solomon',
+			'last_name' => 'Lesidan',
 			'date_created' => date('Y-m-d H:i:s'),
 			'date_modified' => date('Y-m-d H:i:s')
 		));
