@@ -6,7 +6,11 @@ class JenkinsControllerTest extends ControllerTestCase {
 	);*/
 	public function testIndex() {
 		$act = $this->testAction('/jenkins/index');
-		var_dump($act);
+		if($act == true) {
+			$this->assertTrue($act);
+		} else {
+			$this->assertFalse($act);
+		}
 		
 	}
 
