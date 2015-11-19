@@ -16,12 +16,12 @@ class Test extends AppModel {
 
  public $validate = array(
  	'first_name' => array(
-		'rule' => 'notEmpty',
+		'rule' => 'notBlank',
 		'message' => 'Please input valid name'	
 	
 	),
 	'last_name' => array(
-		'rule' => 'notEmpty',
+		'rule' => 'notBlank',
 		'message' => 'Please input valid name'	
 	
 	),
