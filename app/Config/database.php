@@ -83,7 +83,7 @@ class DATABASE_CONFIG {
 		'host' => 'localhost',
 		'login' => 'root',
 		'password' => '',
-		'database' => 'test_database',
+		'database' => 'jenkins',
 		'prefix' => '',
 		//'encoding' => 'utf8',
 	);
