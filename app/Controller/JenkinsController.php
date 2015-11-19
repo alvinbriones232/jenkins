@@ -12,7 +12,7 @@ class JenkinsController extends AppController {
 		$this->Test = ClassRegistry::init('Test');
 		$data = array('Test' => array(
 			'first_name' => 'James Fairhurst',
-			'last_name' => '',
+			'last_name' => 'fgdfgghfg',
 			'date_created' => date('Y-m-d H:i:s'),
 			'date_modified' => date('Y-m-d H:i:s')
 		));
