@@ -20,4 +20,19 @@ class Test extends AppModel {
  *
  * @var array
  */
+
+ public $validate = array(
+ 	'first_name' => array(
+		'rule' => 'notEmpty',
+		'message' => 'Please input valid name'	
+	
+	),
+	'last_name' => array(
+		'rule' => 'notEmpty',
+		'message' => 'Please input valid name'	
+	
+	),
+
+ );
+
 }
