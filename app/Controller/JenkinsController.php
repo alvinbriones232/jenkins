@@ -9,6 +9,5 @@ App::uses('AppController', 'Controller');
 class JenkinsController extends AppController {
 	public function index() {
 		echo 'hi';
-		exit();
 	}
 }
