@@ -4,7 +4,8 @@ class JenkinsControllerTest extends ControllerTestCase {
 	/*public $fixtures = array(
 		'app.message'
 	);*/
-	public function testIndex() {
+	$data = array('1','2');
+	public function testIndex($data) {
 		$a = $this->testAction('/',array('return' => 'vars'));
 		debug($a);
 	}
