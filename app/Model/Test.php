@@ -9,13 +9,6 @@ App::uses('AppModel', 'Model');
 class Test extends AppModel {
 
 /**
- * Validation rules
- *
- * @var array
- */
-	public $validate = array();
-
-/**
  * belongsTo associations
  *
  * @var array
