@@ -257,13 +257,5 @@
 	<target name="release" depends="release-commit,build,distribute" description="Release a new version of CakePHP" />
 	<target name="code-reports" depends="reports-ci"
 		description="Run the code reports, generating XML output for CI server use." />
-	<phpunit codecoverage="true" haltonfailure="true" haltonerror="true">
-	  <formatter type="clover" usefile="false"/>
-	  <batchtest>
-	    <fileset dir="tests">
-	      <include name="**/*Test*.php"/>
-	    </fileset>
-	  </batchtest>
-	</phpunit>
 
 </project>
