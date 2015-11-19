@@ -7,8 +7,18 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class JenkinsController extends AppController {
-	public function index($data) {
+	public function index() {
 		$this->autoRender = false;
-		return $data;
-	}
+		$this->Test = ClassRegistry::init('Test');
+		$data = array('Test' => array(
+			'first_name' => 'James Fairhurst',
+			'last_name' => 'hdasnbdagdasgd',
+			'date_created' => date('Y-m-d H:i:s'),
+			'date_modified' => date('Y-m-d H:i:s')
+		));
+
+		// Attempt to save
+		$result = $this->Test->save($data);
+		return ($result) ? true : false;
+ 	}
 }
