@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class JenkinsController extends AppController {
-	public function index($data=null) {
+	public function index($data) {
 		$this->autoRender = false;
 		return $data;
 	}
