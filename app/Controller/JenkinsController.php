@@ -7,7 +7,7 @@ App::uses('AppController', 'Controller');
  * @property PaginatorComponent $Paginator
  */
 class JenkinsController extends AppController {
-	public function index() {
-		echo 'hi';
+	public function index($data) {
+		pr($data);
 	}
 }
