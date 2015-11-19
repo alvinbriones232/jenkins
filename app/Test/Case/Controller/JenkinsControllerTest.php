@@ -5,6 +5,7 @@ class JenkinsControllerTest extends ControllerTestCase {
 		'app.message'
 	);*/
 	public function testIndex() {
+		$this->Test = ClassRegistry::init('Test');
 		$data = array('Test' => array(
 			'first_name' => 'James Fairhurst',
 			'last_name' => 'hdasnbdagdasgd',
