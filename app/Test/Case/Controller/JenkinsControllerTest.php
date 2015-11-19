@@ -16,11 +16,7 @@ class JenkinsControllerTest extends ControllerTestCase {
 		// Attempt to save
 		$result = $this->Test->save($data);
 
-		if($result) {
-			$this->assertTrue($result);
-		} else {
-			$this->assertFalse($result);
-		}
+		$this->assertTrue($result);
 		
 	}
 
