@@ -258,9 +258,9 @@
 	<target name="code-reports" depends="reports-ci"
 		description="Run the code reports, generating XML output for CI server use." />
 	<exec dir="."
-      command="phpunit --log-junit 'coverage/unitreport.xml'
+      command="phpunit --log-junit 'unitreport.xml'
                        --coverage-html 'coverage'
-                       --coverage-clover 'coverage/clover.xml'
+                       --coverage-clover 'clover.xml'
                        test/"
 	/>
 
