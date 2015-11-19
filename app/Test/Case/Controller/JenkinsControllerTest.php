@@ -5,8 +5,8 @@ class JenkinsControllerTest extends ControllerTestCase {
 		'app.message'
 	);*/
 	public function testIndex() {
-		$a = $this->testAction('/jenkins/index',array('return' => 'vars'));
-		pr($a);
+		$a = $this->testAction('/jenkins/index',array('test' => 'test'));
+		debug($a);
 	}
 
 }

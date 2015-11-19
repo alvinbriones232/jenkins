@@ -9,6 +9,6 @@ App::uses('AppController', 'Controller');
 class JenkinsController extends AppController {
 	public function index($data=null) {
 		$this->autoRender = false;
-		pr($data);
+		return $data;
 	}
 }
