@@ -257,11 +257,5 @@
 	<target name="release" depends="release-commit,build,distribute" description="Release a new version of CakePHP" />
 	<target name="code-reports" depends="reports-ci"
 		description="Run the code reports, generating XML output for CI server use." />
-	<exec dir="."
-      command="phpunit --log-junit 'unitreport.xml'
-                       --coverage-html 'coverage'
-                       --coverage-clover 'clover.xml'
-                       test/"
-	/>
 
 </project>
