@@ -113,11 +113,7 @@
   -->
 
   <!-- Generate the PEAR package from a directory and move the files to the dist folder -->
-  <target name="generate-package" depends="define-pear-package">
-    <exec command="pear package" dir="${build.dir}/${pear.package}" passthru="true"/>
-    <echo msg="Moving ${pear.package}.tgz"/>
-    <move file="${build.dir}/${pear.package}/${pear.package}.tgz" todir="${dist.dir}" />
-  </target>
+  
 
   <!--
     Updates the local copy to the latest head.
@@ -211,7 +207,6 @@
   <!--
     Top level easy to type targets
   -->
-  <target name="build" depends="generate-package" description="Generate a pear package" />
   <target name="release" depends="release-commit,build,distribute" description="Release a new version of CakePHP" />
   <target name="code-reports" depends="reports-ci"
     description="Run the code reports, generating XML output for CI server use." />
