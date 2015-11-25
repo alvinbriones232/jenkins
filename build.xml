@@ -17,7 +17,7 @@
 
   -->
 
-  <taskdef classname="phing.tasks.ext.d51PearPkg2Task" name="d51pearpkg2" />
+  <!-- <taskdef classname="phing.tasks.ext.d51PearPkg2Task" name="d51pearpkg2" /> -->
   <property file="build.properties" />
 
   <!--
@@ -111,7 +111,7 @@
   <!--
     Define the package.xml.  Using xml to make xml is fun!
   -->
-  <target name="define-pear-package" depends="copy-files">
+  <!-- <target name="define-pear-package" depends="copy-files">
     <d51pearpkg2 addhiddenfiles="true" baseinstalldir="/" dir="${build.dir}/${pear.package}">
       <name>CakePHP</name>
       <summary>CakePHP Rapid Development Framework</summary>
@@ -152,7 +152,7 @@
       <exceptions key="Cake/Console/Templates/skel/.htaccess">php</exceptions>
       <exceptions key="Cake/Console/Templates/skel/webroot/.htaccess">php</exceptions>
     </d51pearpkg2>
-  </target>
+  </target> -->
 
   <!-- Generate the PEAR package from a directory and move the files to the dist folder -->
   <target name="generate-package" depends="define-pear-package">
