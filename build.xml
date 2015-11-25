@@ -54,10 +54,7 @@
   <exec executable="phploc">
    <arg value="--exclude" />
    <arg value="${basedir}/lib/Cake/Test" />
-   <arg value="--exclude" />
-   <arg value="${basedir}/lib/Cake/Templates" />
-   <arg value="--log-csv" />
-   <arg value="${basedir}/build/logs/phploc.csv" />
+   
    <arg path="${basedir}/lib/Cake" />
   </exec>
  </target>
