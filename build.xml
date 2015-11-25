@@ -84,7 +84,7 @@
 
 		<!-- Used for other targets -->
 		<property name="pear.package" value="${project.name}-${pear.version}" />
-    <target>
+    <target name="echo">
       <echo msg="Preparing package of ${version} (${pear.version}+${pear.stability})" />
     </target>
 		
@@ -97,7 +97,7 @@
 		Copy all the files to build/ so they can be packaged up.
 	-->
 	<target name="copy-files" depends="clean,prepare">
-    <target><echo msg="Creating build + dist directories." /></target>
+    <target name="echo"><echo msg="Creating build + dist directories." /></target>
 		<mkdir dir="${build.dir}" />
 		<mkdir dir="${dist.dir}" />
 
