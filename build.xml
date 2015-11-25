@@ -84,8 +84,10 @@
 
 		<!-- Used for other targets -->
 		<property name="pear.package" value="${project.name}-${pear.version}" />
-
-		<!-- <echo msg="Preparing package of ${version} (${pear.version}+${pear.stability})" /> -->
+    <target>
+      <echo msg="Preparing package of ${version} (${pear.version}+${pear.stability})" />
+    </target>
+		
 
 		<!-- Get the current git branch -->
 		<exec command="git name-rev HEAD 2>/dev/null | awk '{ print $2 }'" outputProperty="git.branch" />
@@ -95,7 +97,7 @@
 		Copy all the files to build/ so they can be packaged up.
 	-->
 	<target name="copy-files" depends="clean,prepare">
-		<echo msg="Creating build + dist directories." />
+    <target><echo msg="Creating build + dist directories." /></target>
 		<mkdir dir="${build.dir}" />
 		<mkdir dir="${dist.dir}" />
 
