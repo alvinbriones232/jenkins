@@ -100,20 +100,7 @@
   </exec>
  </target>
 
- <!-- <target name="phpcpd" description="Find duplicate code using PHPCPD">
-  <exec executable="phpcpd">
-   <arg value="--log-pmd" />
-   <arg value="${basedir}/build/logs/pmd-cpd.xml" />
-   <arg path="${basedir}/app" />
-  </exec>
- </target> -->
 
- <!-- <target name="phpdox" description="Generate API documentation using phpDox">
-  <exec executable="phpdox">
-   <arg value="-f"/>
-   <arg path="${basedir}/build/phpDox.xml"/>
-  </exec>
- </target> -->
  
  <target name="ensure-tmp-folders">
   <mkdir dir="${basedir}/app/tmp/"/>
