@@ -85,7 +85,7 @@
 		<!-- Used for other targets -->
 		<property name="pear.package" value="${project.name}-${pear.version}" />
 
-		<echo msg="Preparing package of ${version} (${pear.version}+${pear.stability})" />
+		<!-- <echo msg="Preparing package of ${version} (${pear.version}+${pear.stability})" /> -->
 
 		<!-- Get the current git branch -->
 		<exec command="git name-rev HEAD 2>/dev/null | awk '{ print $2 }'" outputProperty="git.branch" />
