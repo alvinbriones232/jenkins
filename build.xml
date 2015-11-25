@@ -58,7 +58,7 @@
    <arg value="${basedir}/lib/Cake/Templates" />
    <arg value="--log-csv" />
    <arg value="${basedir}/build/logs/phploc.csv" />
-   
+   <arg path="${basedir}/lib/Cake" />
   </exec>
  </target>
 
