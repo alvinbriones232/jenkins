@@ -17,7 +17,7 @@
 
   -->
 
-  <taskdef classname="phing.tasks.ext.d51PearPkg2Task" name="d51pearpkg2" />
+  <!-- <taskdef classname="phing.tasks.ext.d51PearPkg2Task" name="d51pearpkg2" /> -->
   <property file="build.properties" />
 
   <!--
@@ -111,48 +111,6 @@
   <!--
     Define the package.xml.  Using xml to make xml is fun!
   -->
-  <target name="define-pear-package" depends="copy-files">
-    <d51pearpkg2 addhiddenfiles="true" baseinstalldir="/" dir="${build.dir}/${pear.package}">
-      <name>CakePHP</name>
-      <summary>CakePHP Rapid Development Framework</summary>
-      <channel>pear.cakephp.org</channel>
-      <description>CakePHP is an application development framework for PHP 5.2+</description>
-
-      <lead user="mark_story" name="Mark Story" email="mark@mark-story.com" />
-      <lead user="lorenzo" name="José Lorenzo Rodríguez" email="jose.zap@gmail.com" />
-      <lead user="PhpNut" name="Larry Masters" email="phpnut@cakephp.org" />
-      <developer user="ADmad" name="Adnan Sarela" email="admad.coder@gmail.com" />
-      <developer user="AD7six" name="Andy Dawson" email="andydawson76@gmail.com" />
-      <developer user="Ceeram" name="Marc Ypes" email="c33ram@gmail.com" />
-      <developer user="jrbasso" name="Juan Basso" email="" />
-      <developer user="Predominant" name="Graham Weldon" email="graham@grahamweldon.com" />
-      <developer user="renan.saddam" name="Renan Gonçalves" email="renan.saddam@gmail.com" />
-      <developer user="rchavik" name="Rachman Chavik" email="rchavik@xintesa.com" />
-
-      <license>MIT License</license>
-      <version release="${pear.version}" api="${pear.version}" />
-      <stability release="${pear.stability}" api="${pear.stability}" />
-      <notes>https://github.com/cakephp/cakephp/blob/master/README</notes>
-      <dependencies>
-        <php minimum_version="5.2.8" />
-        <pear minimum_version="1.9.0" recommended_version="1.9.4" />
-      </dependencies>
-      <dirroles key="bin">script</dirroles>
-      <dirroles key="Cake/Console/Templates/skel">php</dirroles>
-      <dirroles key="Cake/Console/Templates/default">php</dirroles>
-      <dirroles key="Cake/View">php</dirroles>
-      <release>
-        <install as="cake.bat" name="bin/cake.bat" />
-        <install as="cake.php" name="bin/cake.php" />
-        <install as="cake" name="bin/cake" />
-      </release>
-      <exceptions key="Cake/VERSION.txt">php</exceptions>
-      <exceptions key="Cake/LICENSE.txt">php</exceptions>
-      <exceptions key="Cake/Config/cacert.pem">php</exceptions>
-      <exceptions key="Cake/Console/Templates/skel/.htaccess">php</exceptions>
-      <exceptions key="Cake/Console/Templates/skel/webroot/.htaccess">php</exceptions>
-    </d51pearpkg2>
-  </target>
 
   <!-- Generate the PEAR package from a directory and move the files to the dist folder -->
   <target name="generate-package" depends="define-pear-package">
