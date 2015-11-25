@@ -38,7 +38,7 @@
   <mkdir dir="${basedir}/build/logs"/>
  </target>
 
- <!-- <target name="lint">
+ <target name="lint">
   <apply executable="php" failonerror="true">
    <arg value="-l" />
 
@@ -48,7 +48,7 @@
    </fileset>
 
   </apply>
- </target> -->
+ </target>
 
  <target name="phploc" description="Measure project size using PHPLOC">
   <exec executable="phploc">
