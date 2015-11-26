@@ -27,6 +27,10 @@
 		"cakephp/cakephp-codesniffer": "^1.0.0",
 		"phpspec/phpspec": "~2.0"
 	},
+	 "config": {
+        "bin-dir": "bin"
+    },
+    "autoload": {"psr-0": {"": "src"}},
 	"bin": [
 		"lib/Cake/Console/cake"
 	]

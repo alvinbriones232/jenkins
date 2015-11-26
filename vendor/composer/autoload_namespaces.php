@@ -16,4 +16,5 @@ return array(
     'PhpSpec' => array($vendorDir . '/phpspec/phpspec/src'),
     'Diff' => array($vendorDir . '/phpspec/php-diff/lib'),
     'Composer\\Installers\\' => array($vendorDir . '/composer/installers/src'),
+    '' => array($baseDir . '/src'),
 );
