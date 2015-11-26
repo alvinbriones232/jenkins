@@ -5,7 +5,7 @@ class JenkinsControllerTest extends ControllerTestCase {
 		'app.message'
 	);*/
 	public function testIndex() {
-		echo "a";
+		echo "a;
 	}
 
 }
